@@ -2,13 +2,15 @@
     <head>
         <meta charset='utf-8'>
         <hr>AGENDA TELEFÔNICA #2<hr>
-		Nome: <input type="text"id ="nome"/>
-		E-mail: <input type="text"id ="email"/>
-		Telefone: <input type="text"id ="telefone"/>
-		<input type = "submit" id = "botaoSalvar" value = "SALVAR"/>
-		<input type = "submit" id = "botaoExibir" value = "EXIBIR"/>
+		<form id = 'confirm'>  			
+  	  Nome: <input type="text"id ="nome"/>
+	E-mail: <input type="text"id ="email"/>
+  Telefone: <input type="text"id ="telefone"/>
+  			<input type = 'reset' value = 'Limpar'/>
+		</form>
+		 	<input type = "submit" id = "botaoSalvar" value = "SALVAR"/>
+  			<input type = "submit" id = "botaoExibir" value = "EXIBIR"/>
         <script>
-
         var contato = {
 			nome: document.getElementById("nome"),
 		 	email: document.getElementById("email"),
