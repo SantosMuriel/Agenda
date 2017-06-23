@@ -5,10 +5,10 @@ var contato = {
 	telefone: document.getElementById("telefone")	
 }
 var aux = 1;
-var a = new Array ();
+var arrayDeContatos = [{nome: contato.nome, email: contato.email, telefone: contato.telefone}];
 
 function salvarContatos(){
-	a[aux] = contato;
+	arrayDeContatos[aux] = contato;
 	aux++;
 }
 
@@ -19,11 +19,11 @@ function saltarLinha(){
 
 function exibirContatos(){
 	saltarLinha();
-	document.write("Nome: " + contato.nome.value + ".");
+	document.write("Nome: " + arrayDeContatos[1].nome.value + ".");
 	saltarLinha();
-	document.write("E-mail: " + contato.email.value + ".");
+	document.write("E-mail: " + arrayDeContatos[1].email.value + ".");
 	saltarLinha();
-	document.write("Telefone: " + contato.telefone.value + ".");
+	document.write("Telefone: " + arrayDeContatos[1].telefone.value + ".");
 	saltarLinha();
 }
 
